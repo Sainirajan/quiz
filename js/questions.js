@@ -2,7 +2,7 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
+    question: "What does HTML stand is?",
     answer: "Hyper Text Markup Language",
     options: [
       "Hyper Text Preprocessor",
