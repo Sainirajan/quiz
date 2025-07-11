@@ -1,58 +1,58 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [
-    {
+  {
     numb: 1,
-    question: "What does HTML stand is?",
-    answer: "Hyper Text Markup Language",
+    question: "Which tag is used to create a hyperlink in HTML?",
+    answer: "<a>",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "<link>",
+      "<href>",
+      "<a>",
+      "<hyperlink>"
     ]
   },
-    {
+  {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Which property is used in CSS to change the text color?",
+    answer: "color",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "text-color",
+      "font-color",
+      "color",
+      "text-style"
     ]
   },
-    {
+  {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Which command is used to initialize a new Git repository?",
+    answer: "git init",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "git start",
+      "git begin",
+      "git init",
+      "git create"
     ]
   },
-    {
+  {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Which of the following is a JavaScript data type?",
+    answer: "Boolean",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Character",
+      "Float",
+      "Boolean",
+      "Decimal"
     ]
   },
-    {
+  {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Which HTML attribute is used to define inline styles?",
+    answer: "style",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "class",
+      "style",
+      "font",
+      "css"
     ]
-  },
+  }
 ];
