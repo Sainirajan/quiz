@@ -1,0 +1,49 @@
+name: Deploy Dockerized Quiz App to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup SSH access
+      uses: webfactory/ssh-agent@v0.8.1
+      with:
+        ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+
+    - name: SSH & deploy on EC2
+      run: |
+        ssh -o StrictHostKeyChecking=no ubuntu@13.232.216.88 << 'EOF'
+          # Step 1: Install Docker if not present
+          if ! [ -x "$(command -v docker)" ]; then
+            sudo apt update
+            sudo apt install docker.io -y
+            sudo systemctl enable docker
+            sudo systemctl start docker
+          fi
+
+          # Step 2: Clone repo if not already
+          if [ ! -d "quiz-app" ]; then
+            git clone https://github.com/Sainirajan/quiz.git quiz-app
+          fi
+
+          cd quiz-app
+          git pull origin main
+
+          # Step 3: Build Docker image
+          sudo docker build -t quiz-app .
+
+          # Step 4: Stop & remove existing container
+          sudo docker stop quiz || true
+          sudo docker rm quiz || true
+
+          # Step 5: Run the container
+          sudo docker run -d -p 80:80 --name quiz quiz-app
+        EOF
