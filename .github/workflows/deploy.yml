@@ -20,7 +20,7 @@ jobs:
 
     - name: SSH & deploy on EC2
       run: |
-        ssh -o StrictHostKeyChecking=no ubuntu@13.232.216.88 << 'EOF'
+        ssh -o StrictHostKeyChecking=no ubuntu@65.2.127.34 << 'EOF'
           # Step 1: Install Docker if not present
           if ! [ -x "$(command -v docker)" ]; then
             sudo apt update
