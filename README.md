@@ -1,6 +1,6 @@
 # 🚀 Quiz App - CI/CD with GitHub Actions & Docker on EC2
 
-A simple quiz application built using **HTML, CSS, and JavaScript**, designed to test basic web development knowledge.
+A simple quiz application built using **HTML, CSS, and JavaScript**.
 
 This project is deployed using **GitHub Actions**, **Docker**, and **AWS EC2** with automatic deployment on every push to `main`.
 
