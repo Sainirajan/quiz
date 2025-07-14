@@ -4,21 +4,6 @@ A simple quiz application built using **HTML, CSS, and JavaScript**, designed to
 
 This project is deployed using **GitHub Actions**, **Docker**, and **AWS EC2** with automatic deployment on every push to `main`.
 
-## 📁 Project Structure
-
-.
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ ├── questions.js
-│ └── script.js
-├── Dockerfile
-└── .github/
-└── workflows/
-└── deploy.yml
-
-
 ## 🎮 Features
 
 - ✨ Interactive quiz with multiple-choice questions
@@ -46,32 +31,6 @@ GitHub Actions triggers `.github/workflows/deploy.yml`, which:
 Visit your EC2 public IP to see the updated quiz app.
 
 
-## ⚙️ Dockerfile
-
-```Dockerfile
-FROM nginx
-COPY . /usr/share/nginx/html
-This Dockerfile uses NGINX to serve your static files.
-
-🔐 GitHub Secrets Required
-Secret Name	Purpose
-EC2_SSH_KEY	Your private .pem file content
-
-🧪 Sample Questions
-The js/questions.js file contains an array of quiz questions like:
-
-{
-  numb: 1,
-  question: "What does HTML stand for?",
-  answer: "Hyper Text Markup Language",
-  options: [
-    "Hyper Tool Markup Language",
-    "Hyper Text Markup Language",
-    "Hyperlinking Text Mark Language",
-    "Hyper Text Multiple Language"
-  ]
-}
-To update questions, simply edit this file and push your changes — GitHub Actions will auto-deploy it.
 
 📦 Commands for Manual Docker Run (if needed)
 docker build -t quiz-app .
