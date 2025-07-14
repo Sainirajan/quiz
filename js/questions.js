@@ -1,57 +1,58 @@
 let questions = [
   {
     numb: 1,
-    question: "What is the main difference between an ad network and a DSP?",
-    answer: "Ad networks sell inventory in packages, DSPs buy per impression via RTB",
+    question: "What is the primary goal of brand awareness campaigns in advertising?",
+    answer: "To reach a broad consumer audience and maximize exposure",
     options: [
-      "Ad networks only sell premium inventory",
-      "DSPs sell inventory in bulk to ad networks",
-      "Ad networks sell inventory in packages, DSPs buy per impression via RTB",
-      "DSPs do not use real-time bidding"
+      "To increase direct conversions only",
+      "To collect first-party user data",
+      "To reach a broad consumer audience and maximize exposure",
+      "To improve SEO rankings"
     ]
   },
   {
     numb: 2,
-    question: "What does a Supply-Side Platform (SSP) primarily help publishers do?",
-    answer: "Sell their inventory on multiple ad exchanges and networks",
+    question: "Which pricing model charges advertisers for every 1,000 ad impressions?",
+    answer: "Cost Per Mille (CPM)",
     options: [
-      "Buy inventory from advertisers",
-      "Host and serve creative files",
-      "Sell their inventory on multiple ad exchanges and networks",
-      "Analyze user behavior across platforms"
+      "Cost Per Click (CPC)",
+      "Cost Per Action (CPA)",
+      "Cost Per Mille (CPM)",
+      "Flat Rate"
     ]
   },
   {
     numb: 3,
-    question: "Which ad targeting method relies on the context of the webpage content?",
-    answer: "Contextual Targeting",
+    question: "What is a 'publisher' in the context of AdTech?",
+    answer: "A company that produces content and sells ad space",
     options: [
-      "Behavioral Targeting",
-      "Demographic Targeting",
-      "Retargeting",
-      "Contextual Targeting"
+      "A company that purchases ads from brands",
+      "A data broker that segments audiences",
+      "A company that produces content and sells ad space",
+      "A user analytics software provider"
     ]
   },
   {
     numb: 4,
-    question: "What is the primary function of a Data-Management Platform (DMP)?",
-    answer: "To collect, store, and organize data for ad targeting",
+    question: "Which term refers to the software and tools used to manage digital ad campaigns?",
+    answer: "AdTech",
     options: [
-      "To display ads in user browsers",
-      "To store creatives for ad campaigns",
-      "To manage real-time bidding auctions",
-      "To collect, store, and organize data for ad targeting"
+      "SEO Tools",
+      "MarTech",
+      "AdTech",
+      "WebOps"
     ]
   },
   {
     numb: 5,
-    question: "Which of the following is a key benefit of using native ads?",
-    answer: "They blend naturally with the surrounding content",
+    question: "Which of the following best describes a 'creative' in advertising?",
+    answer: "The actual ad file shown to users",
     options: [
-      "They avoid the need for ad markup",
-      "They blend naturally with the surrounding content",
-      "They guarantee higher click-through rates",
-      "They only use text-based formats"
+      "The brand’s logo",
+      "The team designing the ad",
+      "The actual ad file shown to users",
+      "The publisher’s website layout"
     ]
   }
 ];
+
