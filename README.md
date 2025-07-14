@@ -4,8 +4,6 @@ A simple quiz application built using **HTML, CSS, and JavaScript**, designed to
 
 This project is deployed using **GitHub Actions**, **Docker**, and **AWS EC2** with automatic deployment on every push to `main`.
 
----
-
 ## 📁 Project Structure
 
 .
