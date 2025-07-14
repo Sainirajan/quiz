@@ -1,58 +1,57 @@
-// creating an array and passing the number, questions, options, and answers
 let questions = [
   {
     numb: 1,
-    question: "Which tag is used to create a hyperlink in HTML?",
-    answer: "<a>",
+    question: "What is the primary goal of brand awareness campaigns in advertising?",
+    answer: "To reach a broad consumer audience and maximize exposure",
     options: [
-      "<link>",
-      "<href>",
-      "<a>",
-      "<hyperlink>"
+      "To increase direct conversions only",
+      "To collect first-party user data",
+      "To reach a broad consumer audience and maximize exposure",
+      "To improve SEO rankings"
     ]
   },
   {
     numb: 2,
-    question: "Which property is used in CSS to change the text color?",
-    answer: "color",
+    question: "Which pricing model charges advertisers for every 1,000 ad impressions?",
+    answer: "Cost Per Mille (CPM)",
     options: [
-      "text-color",
-      "font-color",
-      "color",
-      "text-style"
+      "Cost Per Click (CPC)",
+      "Cost Per Action (CPA)",
+      "Cost Per Mille (CPM)",
+      "Flat Rate"
     ]
   },
   {
     numb: 3,
-    question: "Which command is used to initialize a new Git repository?",
-    answer: "git init",
+    question: "What is a 'publisher' in the context of AdTech?",
+    answer: "A company that produces content and sells ad space",
     options: [
-      "git start",
-      "git begin",
-      "git init",
-      "git create"
+      "A company that purchases ads from brands",
+      "A data broker that segments audiences",
+      "A company that produces content and sells ad space",
+      "A user analytics software provider"
     ]
   },
   {
     numb: 4,
-    question: "Which of the following is a JavaScript data type?",
-    answer: "Boolean",
+    question: "Which term refers to the software and tools used to manage digital ad campaigns?",
+    answer: "AdTech",
     options: [
-      "Character",
-      "Float",
-      "Boolean",
-      "Decimal"
+      "SEO Tools",
+      "MarTech",
+      "AdTech",
+      "WebOps"
     ]
   },
   {
     numb: 5,
-    question: "Which HTML attribute is used to define inline styles?",
-    answer: "style",
+    question: "Which of the following best describes a 'creative' in advertising?",
+    answer: "The actual ad file shown to users",
     options: [
-      "class",
-      "style",
-      "font",
-      "css"
+      "The brand’s logo",
+      "The team designing the ad",
+      "The actual ad file shown to users",
+      "The publisher’s website layout"
     ]
   }
 ];
