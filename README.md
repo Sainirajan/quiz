@@ -30,16 +30,3 @@ GitHub Actions triggers `.github/workflows/deploy.yml`, which:
 ### 3. App is Live!  
 Visit your EC2 public IP to see the updated quiz app.
 
-
-
-📦 Commands for Manual Docker Run (if needed)
-docker build -t quiz-app .
-docker run -d -p 80:80 --name quiz quiz-app
-🖥️ Access the App
-Once deployed, access the app in your browser:
-
-http://<EC2_PUBLIC_IP>
-🙌 Credits
-Built by Sai Niranjan
-CI/CD powered by GitHub Actions
-Hosted on AWS EC2
